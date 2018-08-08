@@ -1,0 +1,4 @@
+{
+  runningcontainers:["§§INSTANCE-mantisbt", "§§INSTANCE-mantisbt-db"],
+  supportcontainers:["§§INSTANCE-mantisbt-data"]    
+}

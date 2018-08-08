@@ -1,0 +1,20 @@
+[
+    {
+       "id":"MYSQL_ROOT_PASSWORD",
+       "display_name":"MySQL Root Password",
+       "type":"text",
+       "default_value":"mantis4bibbox",
+       "description":"Root Password for MySQL DB, remember well",
+       "min_length": "1",
+       "max_length": "128"
+    },
+    {
+       "id":"MYSQL_USER_PASSWORD",
+       "display_name":"MySQL User Password",
+       "type":"text",
+       "default_value":"mantis4bibbox",
+       "description":"User Password for MySQL DB, username = mantis",
+       "min_length": "1",
+       "max_length": "128"
+    }
+]

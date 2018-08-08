@@ -1,0 +1,41 @@
+version: '2'
+
+networks:
+    bibbox-default-network:
+      external: true
+
+services:
+
+  §§INSTANCE-mantis:
+    image: bibbox/mantis
+    container_name:  §§INSTANCE-mantis
+    links:
+      - §§INSTANCE-mantis-db:mantis-db
+    ports:
+      - "8065:80"
+    depends_on:
+      - §§INSTANCE-mantis-db
+      - §§INSTANCE-mantis-data
+    volumes_from: 
+      - §§INSTANCE-mantis-data
+
+  §§INSTANCE-mantis-db:
+    image: mariadb
+    container_name: §§INSTANCE-mantis-db
+    user: root
+    environment:
+      - MYSQL_ROOT_PASSWORD=mantis4bibbox
+      - MYSQL_DATABASE=bugtracker
+      - MYSQL_USER=mantis
+      - MYSQL_PASSWORD=mantisbt4bibbox
+    volumes_from: 
+      - §§INSTANCE-mantis-data
+    depends_on:
+      - §§INSTANCE-mantis-data
+
+  §§INSTANCE-mantis-data:
+    image: busybox
+    container_name: §§INSTANCE-mantis-data
+    volumes:
+      - ./data/var/lib/mysql:/var/lib/mysql
+
