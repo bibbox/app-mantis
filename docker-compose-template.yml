@@ -11,6 +11,8 @@ services:
     container_name:  §§INSTANCE-mantis
     links:
       - §§INSTANCE-mantis-db:mantis-db
+    networks:
+      - bibbox-default-network
     ports:
       - "8065:80"
     depends_on:
@@ -23,6 +25,8 @@ services:
     image: mariadb
     container_name: §§INSTANCE-mantis-db
     user: root
+    networks:
+      - bibbox-default-network
     environment:
       - MYSQL_ROOT_PASSWORD=mantis4bibbox
       - MYSQL_DATABASE=bugtracker
@@ -36,6 +40,8 @@ services:
   §§INSTANCE-mantis-data:
     image: busybox
     container_name: §§INSTANCE-mantis-data
+    networks:
+      - bibbox-default-network
     volumes:
       - ./data/var/lib/mysql:/var/lib/mysql
 
