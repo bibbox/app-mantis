@@ -1,4 +1,4 @@
 {
-  runningcontainers:["§§INSTANCE-mantisbt", "§§INSTANCE-mantisbt-db"],
-  supportcontainers:["§§INSTANCE-mantisbt-data"]    
+  runningcontainers:["§§INSTANCE-mantis", "§§INSTANCE-mantis-db"],
+  supportcontainers:["§§INSTANCE-mantis-data"]
 }
