@@ -27,7 +27,7 @@ services:
       - MYSQL_ROOT_PASSWORD=mantis4bibbox
       - MYSQL_DATABASE=bugtracker
       - MYSQL_USER=mantis
-      - MYSQL_PASSWORD=mantisbt4bibbox
+      - MYSQL_PASSWORD=mantis4bibbox
     volumes_from: 
       - §§INSTANCE-mantis-data
     depends_on:

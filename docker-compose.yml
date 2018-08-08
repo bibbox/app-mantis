@@ -4,8 +4,8 @@ services:
 
   bibbox-mantis:
     # debug
-    build: ./images/mantis # for debug
-#    image: bibbox/mantis
+#    build: ./images/mantis # for debug
+    image: bibbox/mantis
     container_name:  bibbox-mantis
     links:
       - bibbox-mantis-db:mantis-db
@@ -25,7 +25,7 @@ services:
       - MYSQL_ROOT_PASSWORD=mantis4bibbox
       - MYSQL_DATABASE=bugtracker
       - MYSQL_USER=mantis
-      - MYSQL_PASSWORD=mantisbt4bibbox
+      - MYSQL_PASSWORD=mantis4bibbox
     volumes_from: 
       - bibbox-mantis-data
     depends_on:
