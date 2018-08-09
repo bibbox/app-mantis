@@ -9,12 +9,13 @@ services:
   §§INSTANCE-mantis:
     image: bibbox/mantis
     container_name:  §§INSTANCE-mantis
+    restart: unless-stopped
     links:
       - §§INSTANCE-mantis-db:mantis-db
     networks:
       - bibbox-default-network
     ports:
-      - "8065:80"
+      - "§§PORT:80"
     depends_on:
       - §§INSTANCE-mantis-db
       - §§INSTANCE-mantis-data
@@ -24,6 +25,7 @@ services:
   §§INSTANCE-mantis-db:
     image: mariadb
     container_name: §§INSTANCE-mantis-db
+    restart: unless-stopped
     user: root
     networks:
       - bibbox-default-network
@@ -40,6 +42,7 @@ services:
   §§INSTANCE-mantis-data:
     image: busybox
     container_name: §§INSTANCE-mantis-data
+    restart: unless-stopped
     networks:
       - bibbox-default-network
     volumes:
