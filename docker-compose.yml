@@ -10,7 +10,7 @@ services:
     links:
       - bibbox-mantis-db:mantis-db
     ports:
-      - "8065:80"
+      - "8165:80"
     depends_on:
       - bibbox-mantis-db
 
