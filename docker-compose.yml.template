@@ -16,7 +16,7 @@ services:
     depends_on:
       - §§INSTANCE-mantis-db
     ports:
-      "80:80"
+      "8065:80"
     proxy:
       DISPLAYNAME: mattermost
       TEMPLATE: default
