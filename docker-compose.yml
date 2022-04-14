@@ -25,6 +25,4 @@ services:
       - MYSQL_PASSWORD=mantis4bibbox
     volumes:
         - ./data/var/lib/mysql:/var/lib/mysql
-    depends_on:
-      - bibbox-mantis-data
     

@@ -9,7 +9,6 @@ services:
     image: bibbox/mantis
     container_name:  §§INSTANCE-mantis
     restart: unless-stopped
-    environment:
     links:
       - §§INSTANCE-mantis-db:mantis-db
     networks:
