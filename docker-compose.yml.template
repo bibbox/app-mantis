@@ -31,7 +31,7 @@ services:
     networks:
       - bibbox-default-network
     environment:
-      - MYSQL_ROOT_PASSWORD=mantis4bibbox
+      - MYSQL_ROOT_PASSWORD=§§MARIADB_ROOT_PW
       - MYSQL_DATABASE=bugtracker
       - MYSQL_USER=§§MARIADB_USER_ENV
       - MYSQL_PASSWORD=§§MARIADB_USER_PW
