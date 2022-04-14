@@ -13,26 +13,26 @@
 
 Klick on **Install/Upgrade Database**.
 
-![SCREEN1](screen-01.jpg)
+![SCREEN1](assets/screen-01.jpg)
 
 * Now everthing should be "GREEN" and you can continue by clicking on **Continue**
 
-![SCREEN2](screen-02.jpg)
+![SCREEN2](assets/screen-02.jpg)
 
 * You can login with 
 
    * Username: **administrator**
    * Password: **root**
  
-![SCREEN3](screen-03.jpg)
+![SCREEN3](assests/screen-03.jpg)
 
 * First you have to chnage the administrator password
 
-![SCREEN4](screen-04.jpg)
+![SCREEN4](assets/screen-04.jpg)
 
 * And now you can start working
 
-![SCREEN5](screen-05.jpg)
+![SCREEN5](assets/screen-05.jpg)
 
 
 ## Backup instructions
@@ -53,4 +53,4 @@ Klick on **Install/Upgrade Database**.
 
 Have a nice ride with the new Admins youngtimer.
 
-![FINAL](install-screen-final.jpg)
+![FINAL](assets/install-screen-final.jpg)

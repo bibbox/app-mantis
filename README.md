@@ -1,36 +1,28 @@
 # Mantis BIBBOX application
 
-This container can be installed as [BIBBOX APP](http://bibbox.readthedocs.io/en/latest/admin-documentation/ "BIBBOX App Store") or standalone. 
+## Standalone installation
+Clone the github repository, chmod the data foler and run docker-compose up. If necessary change the ports and volume mounts in `docker-compose.yml`.
 
-* initial user/passwordd: **administrator / root**
-* after the docker installation follow these [instructions](https://github.com/bibbox/app-mantis/blob/master/INSTALL-APP.md)
+`sudo git clone https://github.com/bibbox/app-mantis`
 
-## Standalone Installation
+`sudo chmod 777 -R data/`
 
-Clone the github repsoitory and start the install.sh. If necessary change the ports and volume mounts in `docker-compose.yml`.  
+`docker-compose up`
 
-`sudo git clone https://github.com/bibbox/app-mantis
+The frontend is reachable at http://localhost:8065
 
-`sudo chmod +x install.sh`
-
-`sudo ./install.sh`
-
+Then see INSTALL-APP.md
 
 ## Install within BIBBOX
 
-The BIBBOX framework can be installed 
-* as a [virtual machine](http://bibbox.bbmri-eric.eu/resources/machine/), 
-* using [vagrant/puppet](http://bibbox.readthedocs.io/en/latest/installation-vagrant/) 
-* are on any Ubuntu System following these [instructions](http://bibbox.readthedocs.io/en/latest/installation-source/)  
+Within BIBBOX you can use the [BIBBOX](https://bibbox.readthedocs.io/en/latest/) to install a lot of software tools. After the installation is finished you can start your application in the dashboard. 
 
-After BIBBOX is up and running, you can use the [BIBBOX APP Store](http://bibbox.readthedocs.io/en/latest/admin-documentation/ "BIBBOX App Store") to install a lot of software tools. 
+Create an account and off you go 
 
-## Docker Images in the Aoo
- * [bibbox/mantus](https://hub.docker.com/r/bibbox/seeddms/) 
- * [mariaDB](https://hub.docker.com/_/mariadb/), offical mariaDB container
- * [busybox](https://hub.docker.com/_/busybox/), offical data container
- 
-## Install Environment Variables
-  *	MYSQL_ROOT_PASSWORD = roor password of the DB, nedded later in the installation
-  * MYSQL_USER_PASSWORD = User Password for MySQL DB, username = mantis, DBname = bugtracker`
+## Docker Images Used
+* [mariadb](https://hub.docker.com/_/mariadb)
+* [bibbox/mantis](https://hub.docker.com/r/bibbox/mantis)
 
+## Mounted Volumes
+
+- ./data/var/lib/mysql:/var/lib/mysql
