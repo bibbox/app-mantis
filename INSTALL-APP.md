@@ -24,7 +24,7 @@ Klick on **Install/Upgrade Database**.
    * Username: **administrator**
    * Password: **root**
  
-![SCREEN3](assests/screen-03.jpg)
+![SCREEN3](assets/screen-03.jpg)
 
 * First you have to chnage the administrator password
 
