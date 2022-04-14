@@ -19,7 +19,7 @@
      },
      {
       "id": "MARIADB_ROOT_PW",
-      "display_name":"MariaDB Password",
+      "display_name":"MariaDB Admin Password",
       "type":"text, number, password",
       "default_value":"Default Value",
       "description":"Password for Postgres DB",
