@@ -1,8 +1,8 @@
 {
-	"name": "Mants Bugtracker ",
-	"short_name": "Mattermost",
+	"name": "Mantis Bugtracker ",
+	"short_name": "Mantis",
 	"version": "2.25.0",
-	"description": "Comprehensive free Bugtracking to host by yourself",
+	"description": "Comprehensive free Bugtracking to host yourself",
         "short_description": "Bugtracking and Ticketing",
 	"catalogue_url": "",
 	"application_url": "https://www.mantisbt.org/",
