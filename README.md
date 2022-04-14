@@ -17,7 +17,7 @@ Then see INSTALL-APP.md
 
 Within BIBBOX you can use the [BIBBOX](https://bibbox.readthedocs.io/en/latest/) to install a lot of software tools. After the installation is finished you can start your application in the dashboard. 
 
-Create an account and off you go 
+Then see INSTALL-APP.md for further steps. Especially remember the credentials you entered during installation!
 
 ## Docker Images Used
 * [mariadb](https://hub.docker.com/_/mariadb)
