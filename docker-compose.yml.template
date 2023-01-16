@@ -1,11 +1,10 @@
-version: '2'
+version: '3'
 
 networks:
     bibbox-default-network:
       external: true
 
-services:
-
+services: 
   §§INSTANCE-mantis:
     image: bibbox/mantis
     container_name:  §§INSTANCE-mantis
@@ -14,14 +13,16 @@ services:
       - §§INSTANCE-mantis-db:mantis-db
     networks:
       - bibbox-default-network
-    ports:
-      - "§§PORT:80"
     depends_on:
       - §§INSTANCE-mantis-db
-      - §§INSTANCE-mantis-data
-    volumes_from: 
-      - §§INSTANCE-mantis-data
-
+    ports:
+      - "8165:80"
+    proxy:
+      DISPLAYNAME: mattermost
+      TEMPLATE: default
+      TYPE: PRIMARY
+      URLPREFIX: §§INSTANCE
+    
   §§INSTANCE-mantis-db:
     image: mariadb
     container_name: §§INSTANCE-mantis-db
@@ -30,21 +31,10 @@ services:
     networks:
       - bibbox-default-network
     environment:
-      - MYSQL_ROOT_PASSWORD=mantis4bibbox
+      - MYSQL_ROOT_PASSWORD=§§MARIADB_ROOT_PW
       - MYSQL_DATABASE=bugtracker
-      - MYSQL_USER=mantis
-      - MYSQL_PASSWORD=mantis4bibbox
-    volumes_from: 
-      - §§INSTANCE-mantis-data
-    depends_on:
-      - §§INSTANCE-mantis-data
-
-  §§INSTANCE-mantis-data:
-    image: busybox
-    container_name: §§INSTANCE-mantis-data
-    restart: unless-stopped
-    networks:
-      - bibbox-default-network
+      - MYSQL_USER=§§MARIADB_USER_ENV
+      - MYSQL_PASSWORD=§§MARIADB_USER_PW
     volumes:
       - ./data/var/lib/mysql:/var/lib/mysql
-
+    

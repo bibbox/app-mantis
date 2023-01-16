@@ -1,11 +1,11 @@
 {
-	"name": "Mantis Bug Tracker ",
-	"short_name": "MantisBT",
-	"version": "v2.16.0",
-	"description": "MantisBT is an open source issue tracker that provides a delicate balance between simplicity and power. Users are able to get started in minutes and start managing their projects while collaborating with their teammates and clients effectively.",
-        "short_description": "Bug and Issue Tracker",
+	"name": "Mantis Bugtracker ",
+	"short_name": "Mantis",
+	"version": "2.25.0",
+	"description": "Comprehensive free Bugtracking to host yourself",
+        "short_description": "Bugtracking and Ticketing",
 	"catalogue_url": "",
-	"application_url": "https://www.mantisbt.org",
-	"tags": ["Bug and Issue Tracker"],
-	"application_documentation_url": "https://www.mantisbt.org/docs/master/en-US/Admin_Guide/Admin_Guide.pdf"
+	"application_url": "https://www.mantisbt.org/",
+	"tags": ["Social, Ticketing"],
+	"application_documentation_url": "https://www.mantisbt.org/"
 }
