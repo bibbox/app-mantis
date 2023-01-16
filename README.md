@@ -1,5 +1,10 @@
 # Mantis BIBBOX application
 
+Mantis can be installed as [BIBBOX APP](https://bibbox.readthedocs.io/en/latest/ "BIBBOX App Store") or standalone. 
+
+* Initial user/password is choosen at login
+* After the installation follow these [instructions](INSTALL-APP.md)
+
 ## Standalone installation
 Clone the github repository, chmod the data foler and run docker-compose up. If necessary change the ports and volume mounts in `docker-compose.yml`.
 
@@ -9,9 +14,10 @@ Clone the github repository, chmod the data foler and run docker-compose up. If 
 
 `docker-compose up`
 
-The frontend is reachable at http://localhost:8065
 
-Then see INSTALL-APP.md
+The frontend is reachable at `http://localhost:8065`
+
+Then see [instructions](INSTALL-APP.md)
 
 ## Install within BIBBOX
 
