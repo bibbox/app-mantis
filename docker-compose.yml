@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 
 services:
 
@@ -13,9 +13,6 @@ services:
       - "8065:80"
     depends_on:
       - bibbox-mantis-db
-      - bibbox-mantis-data
-    volumes_from: 
-      - bibbox-mantis-data
 
   bibbox-mantis-db:
     image: mariadb
@@ -26,13 +23,6 @@ services:
       - MYSQL_DATABASE=bugtracker
       - MYSQL_USER=mantis
       - MYSQL_PASSWORD=mantis4bibbox
-    volumes_from: 
-      - bibbox-mantis-data
-    depends_on:
-      - bibbox-mantis-data
-
-  bibbox-mantis-data:
-    image: busybox
-    container_name: bibbox-mantis-data
     volumes:
-      - ./data/var/lib/mysql:/var/lib/mysql
+        - ./data/var/lib/mysql:/var/lib/mysql
+    
