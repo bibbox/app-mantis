@@ -2,7 +2,7 @@
 	"name": "Mantis Bug Tracker ",
 	"short_name": "MantisBT",
 	"version": "v2.16.0",
-	"description": "MantisBT is an open source issue tracker that provides a delicate balance between simplicity and power. Users are able to get started in minutes and start managing their projects while collaborating with their teammates and clients effectively.",
+	"description": "MantisBT is an open source issue tracker that provides a delicate balance between simplicity and power. Users are able to manage their projects while collaborating with their teammates and clients effectively.",
         "short_description": "Bug and Issue Tracker",
 	"catalogue_url": "",
 	"application_url": "https://www.mantisbt.org",
