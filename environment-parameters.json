@@ -12,7 +12,7 @@
         "id": "MARIADB_USER_PW",
         "display_name":"MariaDB Password",
         "type":"text, number, password",
-        "default_value":"Default Value",
+        "default_value":"changethispasswordinproductionenvironments",
         "description":"Password for Postgres DB",
         "min_length": "1",
         "max_length": "128"
@@ -21,8 +21,8 @@
       "id": "MARIADB_ROOT_PW",
       "display_name":"MariaDB Admin Password",
       "type":"text, number, password",
-      "default_value":"Default Value",
-      "description":"Password for Postgres DB",
+      "default_value":"changethisrootpasswordinproductionenvironments",
+      "description":"ROOT Password for Postgres DB",
       "min_length": "1",
       "max_length": "128"
    }
