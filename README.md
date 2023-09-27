@@ -6,11 +6,11 @@ Mantis can be installed as [BIBBOX APP](https://bibbox.readthedocs.io/en/latest/
 * After the installation follow these [instructions](INSTALL-APP.md)
 
 ## Standalone installation
-Clone the github repository, chmod the data foler and run docker-compose up. If necessary change the ports and volume mounts in `docker-compose.yml`.
+Clone the github repository, chmod the data folder and run docker-compose up. If necessary change the ports and volume mounts in `docker-compose.yml`.
 
-`sudo git clone https://github.com/bibbox/app-mantis`
+`git clone https://github.com/bibbox/app-mantis`
 
-`sudo chmod 777 -R data/`
+`chmod 777 -R data/`
 
 `docker-compose up`
 
