@@ -10,6 +10,8 @@ Clone the github repository, chmod the data folder and run docker-compose up. If
 
 `git clone https://github.com/bibbox/app-mantis`
 
+`cd app-mantis/`
+
 `chmod 777 -R data/`
 
 `docker-compose up`
