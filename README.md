@@ -11,6 +11,7 @@ Clone the github repository. If necessary change the ports in the environment fi
 ```
 git clone https://github.com/bibbox/app-mantis
 cd app-mantis
+chmod 777 -R data/
 docker-compose up -d
 ```
 
