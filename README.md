@@ -1,34 +1,46 @@
-# Mantis BIBBOX application
+# mantis BIBBOX application
 
-Mantis can be installed as [BIBBOX APP](https://bibbox.readthedocs.io/en/latest/ "BIBBOX App Store") or standalone. 
+This container can be installed as [BIBBOX APP](https://bibbox.readthedocs.io/en/latest/ "BIBBOX App Store") or standalone. 
 
-* Initial user/password is choosen at login
-* After the installation follow these [instructions](INSTALL-APP.md)
+- after the docker installation follow these [instructions](INSTALL-APP.md)
 
-## Standalone installation
-Clone the github repository, chmod the data foler and run docker-compose up. If necessary change the ports and volume mounts in `docker-compose.yml`.
+## Standalone Installation 
 
-`sudo git clone https://github.com/bibbox/app-mantis`
+Clone the github repository. If necessary change the ports in the environment file `.env` and the volume mounts in `docker-compose.yml`.
 
-`sudo chmod 777 -R data/`
+```
+git clone https://github.com/bibbox/app-mantis
+cd app-mantis
+docker-compose up -d
+```
 
-`docker-compose up`
-
-
-The frontend is reachable at `http://localhost:8065`
-
-Then see [instructions](INSTALL-APP.md)
+The main app can be opened and set up at
+```
+http://localhost:8165
+```
 
 ## Install within BIBBOX
 
-Within BIBBOX you can use the [BIBBOX](https://bibbox.readthedocs.io/en/latest/) to install a lot of software tools. After the installation is finished you can start your application in the dashboard. 
+Visit the BIBBOX page and find the App by its name in the Store. Click on the symbol and select Install. Then fill the parameters below and name your app click install again.
 
-Then see INSTALL-APP.md for further steps. Especially remember the credentials you entered during installation!
+## Docker Images used
+  - [bibbox/mantis](https://hub.docker.com/r/bibbox/mantis) 
+  - [mariadb](https://hub.docker.com/r/mariadb) 
 
-## Docker Images Used
-* [mariadb](https://hub.docker.com/_/mariadb)
-* [bibbox/mantis](https://hub.docker.com/r/bibbox/mantis)
 
+ 
+## Install Environment Variables
+  - MARIADB_USER_ENV = User for Postges DB
+  - MARIADB_USER_PW = Password for Postgres DB
+  - MARIADB_ROOT_PW = ROOT Password for Postgres DB
+
+  
+The default values for the standalone installation are:
+  - MARIADB_USER_ENV = Default Value
+  - MARIADB_USER_PW = changethispasswordinproductionenvironments
+  - MARIADB_ROOT_PW = changethisrootpasswordinproductionenvironments
+
+  
 ## Mounted Volumes
-
-- ./data/var/lib/mysql:/var/lib/mysql
+### mariadb Conatiner
+  - *./data/var/lib/mysql:/var/lib/mysql*
