@@ -1,5 +1,5 @@
 {
-	"name": "Mantis Bugtracker v2.25.0",
+	"name": "Mantis Bugtracker",
 	"short_name": "Mantis",
 	"version": "2.25.0",
 	"description": "Comprehensive free Bugtracking to host yourself",
@@ -7,5 +7,6 @@
 	"catalogue_url": "",
 	"application_url": "https://www.mantisbt.org/",
 	"tags": ["Social, Ticketing"],
-	"application_documentation_url": "https://www.mantisbt.org/docs/master/en-US/Admin_Guide/Admin_Guide.pdf"
+	"application_documentation_url": "https://www.mantisbt.org/docs/master/en-US/Admin_Guide/Admin_Guide.pdf",
+	"instance_information": "work in progress"
 }
