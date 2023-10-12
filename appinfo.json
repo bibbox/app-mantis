@@ -8,5 +8,5 @@
 	"application_url": "https://www.mantisbt.org/",
 	"tags": ["Social, Ticketing"],
 	"application_documentation_url": "https://www.mantisbt.org/docs/master/en-US/Admin_Guide/Admin_Guide.pdf",
-	"instance_information": "work in progress"
+	"instance_information": "<p> MantisBT is an issue tracker that provides a delicate balance between simplicity and power. Users are easily able to start managing their projects while collaborating with their teammates and clients. </p>"
 }
