@@ -23,10 +23,10 @@ After confirming by clicking "Install," the App will be installed as a BIBBOX in
 
     * Hostname (for DB Severs): **mantis-db**
     * Username (for Database): **mantis**
-    * Password for Database): _as specified in installation_ (default mantis4bibbox)
+    * Password for Database): _as specified in installation_ (default changethispasswordinproductionenvironments)
     * Username (for Database): **bugtracker**
     * Admin Username (to create Database, if required): **root**
-    * Admin Password (to create Database, if required): _as specified in installation_ (default mantis4bibbox)
+    * Admin Password (to create Database, if required): _as specified in installation_ (default changethisrootpasswordinproductionenvironments)
 
 Klick on **Install/Upgrade Database**.
 
